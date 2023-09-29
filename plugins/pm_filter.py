@@ -61,7 +61,7 @@ async def pm_next_page(bot, query):
                     InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'pmfile#{file.file_id}')] for file in files ]
             
             btn.insert(0, [
-        InlineKeyboardButton("🍁 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🍁", url=f"https://t.me/HTD_Tn_links/21")
+              InlineKeyboardButton("🍁 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🍁", url=f"https://t.me/HTD_Tn_links/21")
     ])
 
     if 0 < offset <= 10:
@@ -88,7 +88,7 @@ async def pm_next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ HOW TO DOWNLOAD ⚡", url="https://t.me/HTD_Tn_links/21")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -158,8 +158,11 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             InlineKeyboardButton(text="Next ⏩", callback_data=f"pmnext_{req}_{key}_{offset}")
             ]
         )
+    btn.insert(0, [
+        InlineKeyboardButton("⚡ HOW TO DOWNLOAD ⚡", url="https://t.me/HTD_Tn_links/21")
+    ])
     else:
-        btn.append(
+        btn.append(1
             [InlineKeyboardButton(text="◽Page 1/1", callback_data="pages")]
         )
     if PM_IMDB:
