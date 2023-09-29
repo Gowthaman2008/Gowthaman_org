@@ -18,6 +18,8 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+MSG_ALERT = "Gᴍ Bᴏᴛᴢᴢ™"
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
