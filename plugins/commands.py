@@ -88,6 +88,8 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.DEFAULT
             )
+       # )
+        await query.answer(MSG_ALRT)
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
@@ -112,6 +114,8 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+      #  )
+        await query.answer(MSG_ALRT)
         return
     data = message.command[1]
     try:
